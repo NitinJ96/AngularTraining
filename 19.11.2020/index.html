@@ -7,14 +7,62 @@
     <style>
         *{
             box-sizing: border-box;
+            /* background-color: #dddddd; */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #2b2b28;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        .header{
+            margin: auto;
+            max-width: 1200px;
+            background-color: #2b2b28;
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: #4a4a48;
+            max-width: 100%;
+            padding-top: 20px;
+            color: white;   
+        }
+        .nav{
+            margin: auto;
+            max-width: 1200px; 
+            padding-bottom: 10px; 
+        }
+
+        li{
+            display: inline-block; 
+            padding: 5px;
+            padding-right: 20px;
+        }
+
+        a{
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+          
+        /* Main Section */
+
+        .main-section{
             background-color: #dddddd;
         }
         .container{
+            padding-top: 10px;
             max-width: 1200px;
-            margin: 50px auto;
+            margin:  auto;
             padding: 50px;
             background-color: #ffffff;
-            height: 900px;
+            padding-top: 10px;
         }
 
         .section{
@@ -47,6 +95,7 @@
 
         .box{
             padding: 30px;
+            margin-bottom: 20px;
         }
 
         #box-1{
@@ -59,39 +108,80 @@
             float: right;
             width: 33%;
         }
-        
+
+        .clr{
+            clear: both;
+            margin-top: 20px;
+        }
+        /* Footer */
+        .footer-section{
+            background-color: #2b2b28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
 
-        <div class="section">
-            <div class="content">
-                <div class="card-1">
-                    <h3>Box one</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab suscipit mollitia illum quam, aspernatur odit pariatur, itaque distinctio veritatis voluptatibus sed non at, molestiae quo ex nostrum. Laudantium, a itaque.</p>
-                </div>
-                <div class="card-2">
-                    <h3>box Two</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor atque maiores aut reiciendis. Nisi reprehenderit libero laborum est iste odit eveniet asperiores laudantium dolore placeat quam aliquam, quidem impedit.</p>
-                </div>
-                <div class="card-3">
-                    <h3>Box Three</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quas voluptate iste unde veritatis deleniti voluptas amet harum animi. Consequuntur quidem ipsam aliquid eius incidunt sint dolorum dignissimos dolore suscipit.</p>
+    <header>
+        <div class="header">
+            <h2>Project</h2>
+        </div>
+    </header>
+    <div class="navbar">
+        <div class="nav">
+            <ul>
+                <li><a href="">Home </a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div> 
+    </div>  
+
+    <div class="main-section">
+        <div class="container">
+
+            <div class="section">
+                <div class="content">
+                    <div class="card-1">
+                        <h3>Box one</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab suscipit mollitia illum quam, aspernatur odit pariatur, itaque distinctio veritatis voluptatibus sed non at, molestiae quo ex nostrum. Laudantium, a itaque.</p>
+                    </div>
+                    <div class="card-2">
+                        <h3>box Two</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor atque maiores aut reiciendis. Nisi reprehenderit libero laborum est iste odit eveniet asperiores laudantium dolore placeat quam aliquam, quidem impedit.</p>
+                    </div>
+                    <div class="card-3">
+                        <h3>Box Three</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quas voluptate iste unde veritatis deleniti voluptas amet harum animi. Consequuntur quidem ipsam aliquid eius incidunt sint dolorum dignissimos dolore suscipit.</p>
+                    </div>
                 </div>
             </div>
+    
+            <div id="box-1" class="box">
+                <h3>Main content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deserunt necessitatibus dolorem magni praesentium accusantium mollitia consequatur! Nulla, repellat ratione quae ipsam, est vitae ducimus hic nobis quam quia expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor aliquam ut ad magni cupiditate. Doloremque enim, fuga sit rerum possimus pariatur, repellat voluptatum est aut, fugit ex cupiditate eveniet quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur odit fuga sequi ullam nam facilis, nobis minus ea explicabo laboriosam perferendis necessitatibus, aliquid, debitis consequuntur. Asperiores, maiores reiciendis. Saepe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque repellat a nobis repellendus harum. Ut beatae error odit at, rerum similique facere dolorem dignissimos, praesentium eius, nisi accusamus eos.</p>
+            </div>
+    
+            <div class="box" id="box-2">
+                <h3>SideBar</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, ipsam, maiores, beatae cumque dolore corporis veritatis vero corrupti officiis aliquam sed quasi pariatur aspernatur. Aliquam facilis nemo ipsum doloribus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at magni quod veritatis delectus adipisci iure, officia, atque eaque et mollitia ad eius nesciunt laudantium voluptates vero voluptas repellat molestias?</p>
+            </div>
+    
+            <div class="clr"></div>
+    
+            <div class="box">
+                <h3>Content</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius eos mollitia consequuntur assumenda reprehenderit, tenetur facere placeat nisi, commodi quo delectus, atque itaque dolorum. Odio unde sunt perferendis ipsa eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores quo earum necessitatibus alias deleniti magni quam? Ipsam, fugit facere magni itaque et modi, perferendis cupiditate hic deleniti optio corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit ratione, quod reiciendis qui quae totam impedit optio, debitis dolore, nihil doloremque. Ratione, est earum? Delectus pariatur voluptatibus ut velit?</p>
+            </div>
+            
         </div>
-
-        <div id="box-1" class="box">
-            <h3>Main content</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deserunt necessitatibus dolorem magni praesentium accusantium mollitia consequatur! Nulla, repellat ratione quae ipsam, est vitae ducimus hic nobis quam quia expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor aliquam ut ad magni cupiditate. Doloremque enim, fuga sit rerum possimus pariatur, repellat voluptatum est aut, fugit ex cupiditate eveniet quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur odit fuga sequi ullam nam facilis, nobis minus ea explicabo laboriosam perferendis necessitatibus, aliquid, debitis consequuntur. Asperiores, maiores reiciendis. Saepe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque repellat a nobis repellendus harum. Ut beatae error odit at, rerum similique facere dolorem dignissimos, praesentium eius, nisi accusamus eos.</p>
-        </div>
-
-        <div class="box" id="box-2">
-            <h3>SideBar</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, ipsam, maiores, beatae cumque dolore corporis veritatis vero corrupti officiis aliquam sed quasi pariatur aspernatur. Aliquam facilis nemo ipsum doloribus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at magni quod veritatis delectus adipisci iure, officia, atque eaque et mollitia ad eius nesciunt laudantium voluptates vero voluptas repellat molestias?</p>
-        </div>
-        
     </div>
+
+        <div class="footer-section">
+            <h4>Contact: myexample@example.com</h4>
+        </div>
+    
 </body>
 </html>
