@@ -1,0 +1,23 @@
+<h1 style="text-align: center;">Data Binding Tasks</h1>
+
+<div class="container">
+    <h4>{{stringInterpolation}}</h4>
+</div>
+<br><hr><br>
+<div class="container">
+    <label for="smaple">Enter Input: </label>
+    <input type="text" (input)="onDataEntry($event)">
+    <button [disabled]="!buttonclick" (click)=onClick()>Enter</button>
+    <p>{{ dataOnClick }}</p>
+    <p>This is an example of property and event binding</p>
+</div> 
+<br><hr><br>
+<div class="container">
+    <label for="">Enter Some data</label>
+    <input type="text" [(ngModel)] = "nameData">
+    <p>{{nameData}}</p>
+    <p>This is an example of Two way data binding (ngModel)</p>
+</div>
+
+
+

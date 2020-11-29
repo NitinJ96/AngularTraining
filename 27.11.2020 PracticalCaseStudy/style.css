@@ -1,0 +1,70 @@
+body{
+    background-image: url("georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Navbar */
+nav{
+    color: #1b262c;
+}
+
+#brand{
+    font-size: x-large;
+}
+.navbar-text{
+    font-size: medium;
+}
+
+#navbar-content{
+    padding-right: 30px;
+}
+/* Main content */
+#title-tag{
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+#title-text{
+    text-align: center;
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+/* icons positioning */
+.icons{
+    position: absolute;
+	width: 70px;
+	height: 70px;
+    border-radius: 50%;
+    border: 3px solid;
+    margin-top: -50px;
+    margin-left: 17px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 65px;
+    height: 250px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-elements{
+    background-color: #e8e8e8;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.read-more{
+    text-decoration: none;
+}
