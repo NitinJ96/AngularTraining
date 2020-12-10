@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 ">
+                  <div class="list-group" *ngFor="let type of serverType">
+                    <li class="list-group-item" >
+                        <button class="btn btn-secondary btn-block" (click)="setType(type)">{{type}}</button></li>
+                  </div>
+            </div>
+            <div class="col-lg-7" *ngIf="!displayByType">
+                <app-edit-server-data  *ngIf="edit"></app-edit-server-data>
+                <div class="card mb-2 p-3" *ngFor="let server of servers">
+                    <h5>Server Type: {{server.type}}</h5>
+                    <h6>Server Name: {{server.name}}</h6>
+                    <p>Server Status: {{server.status}}</p>
+                    <button type="button" class="btn btn-primary justify-content-end" id="edit-button" (click)="editData(server)">Edit</button>
+                </div>
+            </div>
+            <div class="col-lg-7" *ngIf="displayByType">
+                <app-edit-server-data *ngIf="edit"></app-edit-server-data>
+                <div class="card mb-2 p-3" *ngFor="let server of displayServers">
+                    <h5>Server Type: {{server.type}}</h5>
+                    <h6>Server Name: {{server.name}}</h6>
+                    <p>Server Status: {{server.status}}</p>
+                    <button type="button" class="btn btn-primary justify-content-end" id="edit-button" (click)="editData(server)">Edit</button>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-primary mb-2" routerLink="/createNew">Create New Server Data</button>
+                <button class="btn btn-primary" routerLink="/newServerType">Create Server Type</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="form-group">
+    <label for="serverName">Server Name</label>
+    <input type="text" class="form-control" id="serverName" name="serverName" 
+    [(ngModel)]="name">
+</div>
+<div class="form-group">
+    <label for="serverContent">Server Content</label>
+    <input type="text" class="form-control" id="serverContent" 
+    [(ngModel)]="content">
+</div>
+<div class="d-flex">
+    <button type="submit" class="btn btn-primary mr-3" (click)="createTestServer()">Add Test Server</button>
+    <button type="submit" class="btn btn-primary" (click)="createDevelopmentServer()">Add Development Server</button>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+    <form #serverData="ngForm">
+        <div class="form-group">
+            <label for="serverType">Server Type</label>
+            <select id="serverType" class="form-control" name="type" [(ngModel)]="type">
+                <option selected>Choose...</option>
+                <option *ngFor="let type of serverTypeList">{{type}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="serverName">Server Name</label>
+            <input type="text" class="form-control" id="serverName" name="name" [(ngModel)]="name">
+        </div>
+
+        <div class="form-group">
+            <label for="inputState">Server Status</label>
+            <select id="inputState" class="form-control" name="status" [(ngModel)]="status">
+                <option selected>Choose...</option>
+                <option *ngFor="let status of serverStatusList">{{status}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="addServerData(serverData.value); serverData.reset()">Submit</button>
+        </div>
+    </form> 
+</div>

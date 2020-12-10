@@ -1,0 +1,12 @@
+app-blog{
+    background-image: url("../assets/image/aaron-burden-xG8IQMqMITM-unsplash.jpg");
+
+  /* Full height */
+  height: 200%;
+
+  /* Center and scale the image nicely */
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}

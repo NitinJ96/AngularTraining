@@ -1,0 +1,21 @@
+.container{
+    max-width: 950px;
+    margin: auto;
+}
+
+#danger{
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid #ee4540;
+    background-color:#f67280;
+    color: #333333;
+}
+
+.danger{
+    float: left;
+}
+
+.close{
+    float: right;   
+}

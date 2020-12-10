@@ -1,0 +1,70 @@
+
+<div class="container-fluid">
+        <div class="container">
+            <h2 class="main-tag">Author Details</h2>
+            <div class="form-group">
+                <label for="fullname"><h5>Full Name</h5></label>
+                <input type="text" class="form-control" name="" id="fullname" placeholder="FullName" [(ngModel)]="fullName">
+            </div>
+            <div class="form-group">
+                <label for="email"><h5>E-mail</h5></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="ex:myname@example.com" [(ngModel)]="email">
+            </div>
+        
+        
+            <h2>Create Blog Post</h2>
+            <div class="form-group">
+                <label for="title"><h5>Post Title</h5></label>
+                <input type="text" class="form-control" name="title" id="title" placeholder="Title" [(ngModel)]="title">
+            </div>
+            <div>
+                <label for="mainblog"><h5>Post Content</h5></label>
+                <textarea class="form-control" name="mainblog" id="mainblog" cols="30" rows="8" placeholder="TextArea" [(ngModel)]="content"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary mt-2" (click)=onAddBlogData()>Submit</button>
+        
+    </div>
+    
+</div>
+
+
+
+
+
+    
+<div *ngFor="let data of createBlogPost">
+    <p>createBlogPost.fullName</p>
+    <p></p>
+</div>
+
+
+<!-- <label for="phonenumber"><h3>Phone Number</h3></label>
+<input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number"> -->
+
+<!-- <div class="d-flex">
+    <div class="container">
+        <h2>Author Details</h2>
+        <div class="form-group">
+            <label for="fullname"><h5>Full Name</h5></label>
+            <input type="text" class="form-control" name="" id="fullname" placeholder="FullName" [(ngModel)]="fullName">
+        </div>
+        <div class="form-group">
+            <label for="email"><h5>E-mail</h5></label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="ex:myname@example.com" [(ngModel)]="email">
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Create Blog Post</h2>
+        <div class="form-group">
+            <label for="title"><h5>Post Title</h5></label>
+            <input type="text" class="form-control" name="title" id="title" placeholder="Title" [(ngModel)]="title">
+        </div>
+        <div>
+            <label for="mainblog"><h5>Post Content</h5></label>
+            <textarea class="form-control" name="mainblog" id="mainblog" cols="30" rows="8" placeholder="TextArea" [(ngModel)]="content"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" (click)=onAddBlogData()>Submit</button>
+    </div>
+
+</div> -->
